@@ -18,9 +18,3 @@
 - CSS3 (Flexbox, Grid)
 - JavaScript (ES6)
 - LocalStorage для сохранения корзины
-
-## Установка
-
-1. Клонируйте репозиторий:
-   ```bash
-   git clone https://github.com/ваш-username/freshmarket.git
