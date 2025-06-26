@@ -1,0 +1,149 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформление заказа | FreshMarket</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="FreshMarket">
+                    <span>FreshMarket</span>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="products.html">Продукты</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <a href="cart.html" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <button class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="order-page">
+        <div class="container">
+            <h1>Оформление заказа</h1>
+            <div class="order-container">
+                <div class="order-form">
+                    <h2>Данные покупателя</h2>
+                    <form id="checkout-form">
+                        <div class="form-group">
+                            <label for="name">ФИО*</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Телефон*</label>
+                            <input type="tel" id="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Адрес доставки*</label>
+                            <textarea id="address" rows="3" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="delivery-time">Время доставки</label>
+                            <select id="delivery-time">
+                                <option value="any">В любое время</option>
+                                <option value="morning">Утро (9:00-12:00)</option>
+                                <option value="afternoon">День (12:00-18:00)</option>
+                                <option value="evening">Вечер (18:00-22:00)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="comment">Комментарий к заказу</label>
+                            <textarea id="comment" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Способ оплаты</label>
+                            <div class="payment-methods">
+                                <label class="payment-method">
+                                    <input type="radio" name="payment" value="cash" checked>
+                                    <span>Наличными при получении</span>
+                                </label>
+                                <label class="payment-method">
+                                    <input type="radio" name="payment" value="card">
+                                    <span>Картой онлайн</span>
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn">Подтвердить заказ</button>
+                    </form>
+                </div>
+                <div class="order-summary">
+                    <h2>Ваш заказ</h2>
+                    <div class="order-items">
+                        <!-- Товары будут добавляться через JavaScript -->
+                    </div>
+                    <div class="order-totals">
+                        <div class="total-row">
+                            <span>Товары</span>
+                            <span class="subtotal">0 ₽</span>
+                        </div>
+                        <div class="total-row">
+                            <span>Доставка</span>
+                            <span class="delivery">0 ₽</span>
+                        </div>
+                        <div class="total-row grand-total">
+                            <span>Итого</span>
+                            <span class="total">0 ₽</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-section">
+                <h3>FreshMarket</h3>
+                <p>Доставка свежих продуктов прямо к вашему столу</p>
+            </div>
+            <div class="footer-section">
+                <h3>Контакты</h3>
+                <p><i class="fas fa-phone"></i> +7 (123) 456-78-90</p>
+                <p><i class="fas fa-envelope"></i> info@freshmarket.ru</p>
+                <p><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Продовольственная, 1</p>
+            </div>
+            <div class="footer-section">
+                <h3>Часы работы</h3>
+                <p>Пн-Пт: 8:00 - 22:00</p>
+                <p>Сб-Вс: 9:00 - 21:00</p>
+            </div>
+            <div class="footer-section">
+                <h3>Мы в соцсетях</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-vk"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 FreshMarket. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="js/order.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина | FreshMarket</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="FreshMarket">
+                    <span>FreshMarket</span>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="products.html">Продукты</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <a href="cart.html" class="cart-icon active">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <button class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="cart-page">
+        <div class="container">
+            <h1>Ваша корзина</h1>
+            <div class="cart-container">
+                <div class="cart-items">
+                    <div class="cart-empty">
+                        <i class="fas fa-shopping-cart"></i>
+                        <p>Ваша корзина пуста</p>
+                        <a href="products.html" class="btn">В каталог</a>
+                    </div>
+                    <!-- Товары будут добавляться через JavaScript -->
+                </div>
+                <div class="cart-summary">
+                    <h3>Итого</h3>
+                    <div class="summary-details">
+                        <div class="summary-row">
+                            <span>Товары (0)</span>
+                            <span class="subtotal">0 ₽</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Доставка</span>
+                            <span class="delivery">0 ₽</span>
+                        </div>
+                        <div class="summary-row total">
+                            <span>Всего</span>
+                            <span class="total-price">0 ₽</span>
+                        </div>
+                    </div>
+                    <button class="btn checkout-btn" disabled>Оформить заказ</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-section">
+                <h3>FreshMarket</h3>
+                <p>Доставка свежих продуктов прямо к вашему столу</p>
+            </div>
+            <div class="footer-section">
+                <h3>Контакты</h3>
+                <p><i class="fas fa-phone"></i> +7 (123) 456-78-90</p>
+                <p><i class="fas fa-envelope"></i> info@freshmarket.ru</p>
+                <p><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Продовольственная, 1</p>
+            </div>
+            <div class="footer-section">
+                <h3>Часы работы</h3>
+                <p>Пн-Пт: 8:00 - 22:00</p>
+                <p>Сб-Вс: 9:00 - 21:00</p>
+            </div>
+            <div class="footer-section">
+                <h3>Мы в соцсетях</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-vk"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 FreshMarket. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="js/cart.js"></script>
+</body>
+</html>
